@@ -19,7 +19,7 @@ Prior to running this role via Packer, you need to make sure Ansible is installe
     "type": "ansible-local",
     "playbook_file": "ansible/main.yml",
     "role_paths": [
-      "/Users/jgeerling/Dropbox/VMs/roles/catosplace.packer-debian",
+      "/Users/jgeerling/Dropbox/VMs/roles/catosplace.packer_debian",
     ]
   }
 ],
@@ -60,7 +60,7 @@ apt -y install ansible
   sudo: yes
   gather_facts: yes
   roles:
-    - catosplace.packer-debian
+    - catosplace.packer_debian
 ```
 
 You might also want to add another shell provisioner to run cleanup, erasing free space using `dd`, but this is not required (it will just save a little disk space in the Packer-produced .box file).
