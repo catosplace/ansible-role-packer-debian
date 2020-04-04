@@ -77,9 +77,9 @@
 #  shell: "apt-get -y remove '.*-dev$'"
 #  tags: ['skip_ansible_lint']
 
-- name: Clean up apt.
-  command: "{{ item }}"
-  changed_when: false
-  with_items:
-    - apt-get -y autoremove
-    - apt-get -y clean
+#- name: Clean up apt.
+#  command: "{{ item }}"
+#  changed_when: false
+#  with_items:
+#    - apt-get -y autoremove
+#    - apt-get -y clean

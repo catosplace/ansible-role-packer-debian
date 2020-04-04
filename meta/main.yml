@@ -3,7 +3,7 @@ dependencies: []
 
 galaxy_info:
   role_name: packer-debian
-  author: petersellars 
+  author: petersellars
   description: Debian/Ubuntu configuration for Packer.
   company: "Catosplace"
   issue_tracker_url: "https://github.com/catosplace/ansible-role-packer-debian"
